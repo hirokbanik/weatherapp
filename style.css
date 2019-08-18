@@ -23,7 +23,7 @@ body {
 }
 
 .wrapper {
-  background-color: #ffffff20;
+  background-color: #ffffff25;
   height: 600px;
   padding: 0.5rem 2rem 1rem;
   min-width: 340px;
@@ -35,8 +35,8 @@ body {
   font-family: "Noto Sans", sans-serif;
   color: #ffffff;
   text-align: center;
-  text-shadow: 0 6px 6px #000000;
-  border: 1px solid #aaa;
+  text-shadow: 0 6px 6px #000000, 0 10px 10px #00000080;
+  border: 1px solid #ffffff40;
 }
 
 .location {
