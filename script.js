@@ -1,3 +1,4 @@
+let body = select("body");
 let loc = select(".location");
 let currentTemp = select(".current-temp");
 let minTemp = select(".min-temp");
@@ -43,10 +44,16 @@ function updateData(res) {
     cloud.innerText = `${res.clouds.all}%`;
     humidity.innerText = `${res.main.humidity}%`;
     wind.innerText = `${res.wind.speed} m/s`;
-    icon.src = `./icons/${res.weather[0].icon}.svg`;
+    icon.src = `./icons/${imgmap[res.weather[0].icon]}.svg`;
+    body.style.setProperty(
+      "--bgimage",
+      `url("./images/${imgmap[res.weather[0].icon]}.jpg")`
+    );
+
     showElements();
   } else {
     loc.value = "Oops.." + res.message;
+
     hideElements();
   }
 }

@@ -13,12 +13,17 @@ body {
   height: 100%;
 }
 body {
-  display: flex;
+  --bgimage: url("./images/01d.jpg");
+  padding: 10px 0;
+  display: grid;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(#00000080, #000000),
+    var(--bgimage) center center/cover;
 }
 
 .wrapper {
+  background-color: #ffffff20;
   height: 600px;
   padding: 0.5rem 2rem 1rem;
   min-width: 340px;
@@ -28,8 +33,9 @@ body {
   align-items: center;
   border-radius: 40px;
   font-family: "Noto Sans", sans-serif;
-  color: #333;
+  color: #ffffff;
   text-align: center;
+  text-shadow: 0 6px 6px #000000;
   border: 1px solid #aaa;
 }
 
